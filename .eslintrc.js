@@ -1,26 +1,27 @@
 module.exports = {
-  parserOptions: {
-    sourceType: 'module'
-  },
-  parser: 'babel-eslint',
-  env: {
-    node: true
-  },
-  extends: [
-    'standard',
-    'prettier',
-    'prettier/standard',
-    'plugin:jest/recommended'
-  ],
-  plugins: ['prettier', 'jest'],
-  rules: {
-    'promise/catch-or-return': 'error',
-    'prettier/prettier': [
-      'error',
-      {
-        'singleQuote': true,
-        'semi': false
-      }
-    ]
-  }
-}
+    "env": {
+        "browser": true,
+        "es6": true
+    },
+    "extends": [
+        "airbnb"
+    ],
+    "globals": {
+        "Atomics": "readonly",
+        "SharedArrayBuffer": "readonly"
+    },
+    "parser": "@typescript-eslint/parser",
+    "parserOptions": {
+        "ecmaFeatures": {
+            "jsx": true
+        },
+        "ecmaVersion": 2018,
+        "sourceType": "module"
+    },
+    "plugins": [
+        "react",
+        "@typescript-eslint"
+    ],
+    "rules": {
+    }
+};

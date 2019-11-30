@@ -52,5 +52,5 @@ extend type Query {
 extend type Mutation {
   newProduct(input: NewProductInput!): Product!
   updateProduct(id: ID!, input: UpdateProductInput!): Product!
-  removeProduct(id:ID!): Product!
+  removeProduct(id: ID!): Product!
 }
